@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Outfit&display=swap');
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-gray: hsl(212, 45%, 89%);
+--Grayish-blue: hsl(220, 15%, 55%);
+--Dark-blue: hsl(218, 44%, 22%);
+}
+/* =================Header===================== */
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: var(--Light-gray);
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50% , -50%);
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 300px;
+    padding: 20px 20px 60px 20px;
+    border-radius: 18px;
+    
+}
+.parent img {
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 18px;
+}
+
+.parent .details .heading{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Dark-blue);
+    margin-bottom: 20px;
+}
+
+.parent .details .title{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px 20px;
+    color: var(--Grayish-blue);
+    
+}
+
+/* =================Footer=========================== */
+.attribution{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    bottom: 0px;
+    }
+
+.attribution a{
+    font-weight: 600;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 0.5s;
+    color: blue;
+}
+
+a:hover{
+    font-size: 18px;
+}
+
+/* ============Media=============== */
+@media (max-width: 375px){
+    .parent{
+        width: 200px;
+    }
+    .parent img{
+        width: 200px;
+        height: 200px;
+    }
+    .attribution{
+        position: absolute;
+        transform: translate(-50% , -50%);
+        left: 50%;
+        bottom: 0px;
+        font-size: 12px;
+        }
+}
